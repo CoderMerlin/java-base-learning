@@ -14,13 +14,13 @@ public class Test {
         //需求：获得java课程视频 / python课程视频
         VideoFactory videoFactory = new JavaVideoFactory();
         Video video = videoFactory.getVideo();
-        video.product(); //录制Java课程视频
+        video.produce(); //录制Java课程视频
 
         //需求:新增一个spring课程
         //分析：我们只需要定义一个spring普通类，继承Video抽象类。 定义一个spring工程类来调用spring普通类
         VideoFactory videoFactory2 = new SpringVideoFactory();
         Video video2 = videoFactory2.getVideo();
-        video2.product(); //录制Spring课程视频
+        video2.produce(); //录制Spring课程视频
 
         /*
         总结：

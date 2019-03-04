@@ -9,5 +9,5 @@ package com.design.merlin.factorypattern.methodfactory;
  */
 public abstract class Video {
 
-    public abstract void product();
+    public abstract void produce();
 }

@@ -9,7 +9,7 @@ package com.design.merlin.factorypattern.methodfactory;
  */
 public class SpringVideo extends Video {
     @Override
-    public void product() {
+    public void produce() {
         System.out.println("录制Spring课程视频");
     }
 }
