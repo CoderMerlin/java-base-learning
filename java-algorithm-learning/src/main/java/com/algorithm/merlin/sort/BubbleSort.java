@@ -1,5 +1,7 @@
 package com.algorithm.merlin.sort;
 
+import java.util.Arrays;
+
 /**
  * @author merlin
  * @Title: BubbleSort
@@ -115,7 +117,9 @@ public class BubbleSort {
     public static void main(String[] args) {
         int[] arrays = {2,5,3,7,1};
         //bubbleSortTwo(bubbleSortOne(arrays));
-        bubbleSortThree(arrays);
+        int[] ints = bubbleSortThree(arrays);
+        System.out.println("Coder编程：   ");
+        Arrays.stream(ints).forEach(e -> System.out.print("  "+e));
     }
 
 }

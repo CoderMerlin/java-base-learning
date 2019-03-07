@@ -1,5 +1,7 @@
 package com.algorithm.merlin.sort;
 
+import java.util.Arrays;
+
 /**
  * @author Merlin
  * @Title: InsertionSort
@@ -31,7 +33,7 @@ public class InsertionSort {
             while(arr[i-1] > temp) {
                 //符合条件，进行替换
                 arr[i] = arr[i-1];
-                //数组下标移到前一个数据，后面进行赋值
+                //不断往前，直到退出循环
                 i--;
             }
             //退出循环，说明符合,将当前数据
@@ -42,10 +44,9 @@ public class InsertionSort {
 
 
     public static void main(String[] args) {
-        int[] arr = {};
+        int[] arr = {1,25,3,4,5,7,4,3,2};
         int[] insertionSort = insertionSort(arr);
-        for (int i = 0; i < insertionSort.length; i++) {
-            System.out.print(insertionSort[i]+"  ");
-        }
+        System.out.println("Coder编程：   ");
+        Arrays.stream(insertionSort).forEach(e -> System.out.print("  "+e));
     }
 }

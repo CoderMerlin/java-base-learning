@@ -1,5 +1,7 @@
 package com.algorithm.merlin.sort;
 
+import java.util.Arrays;
+
 /**
  * @author Merlin
  * @Title: SelectionSort
@@ -44,8 +46,7 @@ public class SelectionSort {
     public static void main(String[] args) {
         int[] arr = {1,8,2,5,3};
         int[] selectionSort = selectionSort(arr);
-        for (int i = 0; i < selectionSort.length; i++) {
-            System.out.print(selectionSort[i]+"  ");
-        }
+        System.out.println("Coder编程：   ");
+        Arrays.stream(selectionSort).forEach(e -> System.out.print("  "+e));
     }
 }
